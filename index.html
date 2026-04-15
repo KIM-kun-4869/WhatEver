@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basketball</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body class="bg-blue container-padding">
+        <div class="flex flex-row space-around">
+            <div class="flex flex-col">
+                <h3>HOME</h3>
+                <div class="timer-font score" id="home-score">0</div>
+                <div class="flex flex-row space-btw">
+                    <button class="timer-font" onclick="addOnePointHome()">+1</button>
+                    <button class="timer-font" onclick="addTwoPointHome()">+2</button>
+                    <button class="timer-font" onclick="addThreePointHome()">+3</button>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <h3>GUEST</h3>
+                <div class="timer-font score" id="guest-score">0</div>
+                <div class="flex flex-row space-btw">
+                    <button class="timer-font" onclick="addOnePointGuest()">+1</button>
+                    <button class="timer-font" onclick="addTwoPointGuest()">+2</button>
+                    <button class="timer-font" onclick="addThreePointGuest()">+3</button>
+                </div>
+            </div>
+        </div>
+        <button id="new-game-btn" onclick="NewGame()">NEW GAME</button>
+        <script src="index.js"></script>
+    </body>
+</html> 
